@@ -1,6 +1,5 @@
-from Merged import build_corpus_from_pdf_folder
 from text_embedding import Retriever
-import numpy as np
+from Merged import build_corpus_from_pdf_folder, run_query_and_suggest
 
 def pipeline(pdf_folder: str, process_normal_data: np.ndarray):
     retriever = Retriever(embed_model_name="all-MiniLM-L6-v2")
