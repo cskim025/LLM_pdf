@@ -1,4 +1,5 @@
-from PDF_parser import demo_pipeline
+from PDF_parser import 
+from text_embedding import Retriever
 import numpy as np
 
 def pipeline(pdf_folder: str, process_normal_data: np.ndarray):
