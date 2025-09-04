@@ -24,7 +24,6 @@ def build_corpus_from_pdf_folder(pdf_folder: str, retriever: Retriever, chunk_si
 def run_query_and_suggest(
     query_description: str,
     retriever: Retriever,
-    anomaly_context: Dict[str, Any] = None,
     generation_backend: str = "openai",
     top_k: int = 5
 ) -> str:
