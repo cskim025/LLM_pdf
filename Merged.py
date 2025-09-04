@@ -2,7 +2,7 @@ import os
 import glob
 import json
 from typing import List, Tuple, Dict, Any
-
+from PDF_parser import extract_text_from_pdf, simple_clean, chunk_text
 from tqdm import tqdm
 
 def build_corpus_from_pdf_folder(pdf_folder: str, retriever: Retriever, chunk_size=512, overlap=64):
